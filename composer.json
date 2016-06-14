@@ -20,7 +20,7 @@
         }
     ],
     "require-dev": {
-        "opencart/opencart" : "2.2.0.0",
+        "fercamp09/opencart" : "2.2.0.0",
         "vlucas/phpdotenv": "~1.1.0",
         "phpunit/phpunit" : "4.*",
         "codegyre/robo": "*"
