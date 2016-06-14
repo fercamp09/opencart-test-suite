@@ -16,7 +16,7 @@
     "repositories": [
         {
             "type" : "vcs" ,
-            "url" : "https://github.com/opencart/opencart"
+            "url" : "https://github.com/fercamp09/opencart"
         }
     ],
     "require-dev": {
