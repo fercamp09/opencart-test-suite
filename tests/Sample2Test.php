@@ -26,4 +26,11 @@ class Sample2Test extends OpenCartTest
         $manufacturer = $model->getManufacturer(5);
         $this->assertEquals('HTC', $manufacturer['name']);
     }
+
+    public function testCategoryModel()
+    {
+        $model = $this->loadModel("catalog/product");
+        $product = $model->getProduct(29);
+        $this->assertEquals(999, $product['quantity']);
+    }
 }
