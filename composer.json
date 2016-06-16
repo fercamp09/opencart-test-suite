@@ -1,5 +1,5 @@
 {
-    "name": "beyondit/opencart-test-suite",
+    "name": "fercamp09/opencart-test-suite",
     "description": "Testing Suite for OpenCart Development",
     "require": {
         "phpunit/phpunit": "4.*"
