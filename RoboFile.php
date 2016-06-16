@@ -21,7 +21,7 @@ class RoboFile extends \Robo\Tasks
     {
         $this->taskDeleteDir('www')->run();
         $this->taskFileSystemStack()
-            ->mirror('vendor/fercamp09/opencart', 'www')
+            ->mirror('vendor/leoeras/Expigo', 'www')
             ->copy('src/test-config.php', 'www/system/config/test-config.php')
             ->copy('src/test-catalog-startup.php','www/catalog/controller/startup/test_startup.php')
             ->chmod('www', 0777, 0000, true)
