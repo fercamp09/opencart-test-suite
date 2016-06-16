@@ -16,7 +16,7 @@
     "repositories": [
         {
             "type" : "vcs" ,
-            "url" : "https://github.com/LeoEras/Expigo"
+            "url" : "https://github.com/LeoEras/Expigo.git"
         }
     ],
     "require-dev": {
