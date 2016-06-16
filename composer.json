@@ -16,11 +16,11 @@
     "repositories": [
         {
             "type" : "vcs" ,
-            "url" : "https://github.com/LeoEras/Expigo.git"
+            "url" : "https://github.com/LeoEras/Expigo"
         }
     ],
     "require-dev": {
-        "leoeras/opencart" : "2.2.0.0",
+        "leoeras/opencart" : "dev-master",
         "vlucas/phpdotenv": "~1.1.0",
         "phpunit/phpunit" : "4.*",
         "codegyre/robo": "*"
