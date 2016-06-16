@@ -16,11 +16,11 @@
     "repositories": [
         {
             "type" : "vcs" ,
-            "url" : "https://github.com/fercamp09/opencart"
+            "url" : "https://github.com/LeoEras/Expigo"
         }
     ],
     "require-dev": {
-        "fercamp09/opencart" : "2.2.0.0",
+        "LeoEras/opencart" : "2.2.0.0",
         "vlucas/phpdotenv": "~1.1.0",
         "phpunit/phpunit" : "4.*",
         "codegyre/robo": "*"
