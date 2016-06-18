@@ -22,4 +22,5 @@ class SampleTest extends OpenCartTest
         $this->assertTrue(isset($output['success']) && isset($output['total']));
         $this->assertRegExp('/HTC Touch HD/', $output['success']);
     }
+    
 }
