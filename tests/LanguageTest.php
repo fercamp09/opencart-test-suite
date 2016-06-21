@@ -10,7 +10,7 @@ class LanguageTest extends OpenCartTest
         $model = $this->loadModel("localisation/language");
         $language = $model->getLanguage(1);
         $this->assertEquals('English', $language['name']);
-        $this->assertEquals('en-en', $language['code']);
+        $this->assertEquals('en-gb', $language['code']);
     }
 
 }
