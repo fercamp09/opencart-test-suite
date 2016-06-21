@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../src/OpenCartTest.php';
 
-class CustomerTest extends OpenCartTest
+class SpanishLanguageTest extends OpenCartTest
 {
 
     public function testCreatingAndLoggingInACustomer()
