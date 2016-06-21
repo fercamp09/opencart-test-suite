@@ -18,6 +18,7 @@
             <file>./tests/LanguageTest.php</file>
             <file>./tests/CategoriesTest.php</file>
             <file>./tests/CartTest.php</file>
+            <file>./tests/ProductTest.php</file>
         </testsuite>
         <testsuite name="admin-tests">
             <file>./tests/SampleAdminTest.php</file>
