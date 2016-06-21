@@ -12,7 +12,10 @@
     <testsuites>
         <testsuite name="catalog-tests">
             <file>./tests/SampleTest.php</file>
-            <file>./tests/Sample2Test.php</file>
+            <file>./tests/CustomerTest.php</file>
+            <file>./tests/ManufacturerTest.php</file>
+            <file>./tests/AccountTest.php</file>
+            <file>./tests/SpanishLanguageTest.php</file>
         </testsuite>
         <testsuite name="admin-tests">
             <file>./tests/SampleAdminTest.php</file>
