@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../src/OpenCartTest.php';
 
-class Sample2Test extends OpenCartTest
+class CustomerTest extends OpenCartTest
 {
 
     public function testCreatingAndLoggingInACustomer()
@@ -12,6 +12,10 @@ class Sample2Test extends OpenCartTest
 
         $this->assertTrue($this->login('somebody@test.com','password'));
         $this->assertTrue(!!$this->customer->isLogged());
+        
+        $model = $this->loadModel("localisation/language");
+        $language = $model->getLanguage(1);
+        $this->assertEquals('English', $language['name']);
 
         $response = $this->dispatchAction('account/edit');
         $this->assertRegExp('/Your Personal Details/',$response->getOutput());
@@ -20,17 +24,4 @@ class Sample2Test extends OpenCartTest
         $this->assertFalse(!!$this->customer->isLogged());
     }
 
-    public function testAnExamplaryModel()
-    {
-        $model = $this->loadModel("catalog/manufacturer");
-        $manufacturer = $model->getManufacturer(5);
-        $this->assertEquals('HTC', $manufacturer['name']);
-    }
-
-    public function testCategoryModel()
-    {
-        $model = $this->loadModel("catalog/product");
-        $product = $model->getProduct(29);
-        $this->assertEquals(999, $product['quantity']);
-    }
 }
