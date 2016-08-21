@@ -25,7 +25,7 @@ class RoboFile extends \Robo\Tasks
             ->mirror('vendor/leoeras/opencart', 'www')
             ->copy('src/test-config.php', 'www/system/config/test-config.php')
             ->copy('src/test-catalog-startup.php','www/catalog/controller/startup/test_startup.php')
-        //    ->chmod('www', 0777, 0000, true)
+            ->chmod('www', 0777, 0000, true)
             ->run();
 
         // Create new database, drop if exists already
