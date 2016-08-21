@@ -43,6 +43,8 @@ dependiendo si es prueba de catalogo (name="catalog-tests") o de admin (name="ad
 
 - Para correr las pruebas localmente (Alfa): 
 Ir a la carpeta raiz donde se descargo el proyecto. Ejecutar los comandos del travis.yml en un bash o un cmd prompt:
+
+Descomentar en src\OpenCartTest.php la linea 16
 ```bash
    composer install // si es que no lo tiene ya instalado
    echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root

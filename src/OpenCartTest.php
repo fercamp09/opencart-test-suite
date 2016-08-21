@@ -12,7 +12,8 @@ class OpenCartTest extends PHPUnit_Framework_TestCase
 
 	public static function loadConfiguration()
 	{
-        putenv("OC_ROOT=C:\\Users\\Ecotel\\opencart-test-suite\\www");
+        // Descomentar esta linea para ejecutar tests localmente
+        // putenv("OC_ROOT=C:\\Users\\Ecotel\\opencart-test-suite\\www");
 
         // OC_ROOT environment variable
         $oc_root = getenv('OC_ROOT');
