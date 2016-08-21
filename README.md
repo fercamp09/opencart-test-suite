@@ -10,11 +10,11 @@ The intend of this project is to provide a simple approach for setting up a test
 ## Getting started
 
 1. Descargar el proyecto de github (https://github.com/fercamp09/opencart-test-suite) o en git bash ejecutar: 
-
+```bash
    git clone https://github.com/fercamp09/opencart-test-suite.git
-
+```
 2. Crear un archivo para pruebas. Ej: NuevoTest.php
-
+```php
    <?php
    require_once __DIR__ . '/../src/OpenCartTest.php';
 
@@ -25,33 +25,33 @@ The intend of this project is to provide a simple approach for setting up a test
            $this->assertFalse($this->isAdmin());
        }  
    }
-
+```
 3. Agregar una entrada a <testsuite> en el archivo phpunit.xml,
 dependiendo si es prueba de catalogo (name="catalog-tests") o de admin (name="admin-tests"). La entrada debe ser:
-
+```bash
    <file>./tests/NuevoTest.php</file>
-
+```
 - Para correr las pruebas con travis:
 
 4. Actualizar el proyecto en el repositorio: 
-
+```bash
    git add . 
    git commit -m "Nuevotest implementado"
    git push origin master
-
+```
 5. Ir a travis, ver como se instala y se ejecuta el proyecto. Si hay errores, leerlos y luego corregirlos.
 
 - Para correr las pruebas localmente (Alfa): 
 Ir a la carpeta raiz donde se descargo el proyecto. Ejecutar los comandos del travis.yml en un bash o un cmd prompt:
-
+```bash
    composer install // si es que no lo tiene ya instalado
    echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
    bin/robo travis:opencart-setup
    bin/phpunit --testsuite catalog-tests
    bin/phpunit --testsuite admin-tests
-
+```
 Otra forma:
-The easiest way to get started, is to use our [Opencart Project Template](https://github.com/beyondit/opencart-project-template).
+The easiest way to get started, is to use their [Opencart Project Template](https://github.com/beyondit/opencart-project-template).
 			
 ## Examples
 
