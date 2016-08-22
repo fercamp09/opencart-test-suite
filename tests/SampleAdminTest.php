@@ -10,7 +10,7 @@ class SampleAdminTest extends OpenCartTest
     {
         $this->login('admin','admin');
         $response = $this->dispatchAction('common/dashboard');
-        $this->assertRegExp('/Total Sales/', $response->getOutput());
+        $this->assertRegExp('/Ventas Totales/', $response->getOutput());
         $this->logout();
     }
 
@@ -21,8 +21,9 @@ class SampleAdminTest extends OpenCartTest
 
     public function testAdminController()
     {
+        $this->login('admin','admin');
         $response = $this->dispatchAction('common/dashboard');
-        $this->assertRegExp('/Please enter your login details./', $response->getOutput());
+        $this->assertRegExp('/Panel de Control/', $response->getOutput());
     }
 
 

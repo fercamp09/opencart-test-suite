@@ -48,9 +48,9 @@ Descomentar en src\OpenCartTest.php la linea 16
 ```bash
    composer install // si es que no lo tiene ya instalado
    echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
-   bin/robo travis:opencart-setup
-   bin/phpunit --testsuite catalog-tests
-   bin/phpunit --testsuite admin-tests
+   bin\robo travis:opencart-setup
+   bin\phpunit --testsuite catalog-tests
+   bin\phpunit --testsuite admin-tests
 ```
 Otra forma:
 The easiest way to get started, is to use their [Opencart Project Template](https://github.com/beyondit/opencart-project-template).
